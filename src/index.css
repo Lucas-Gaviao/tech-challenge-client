@@ -11,6 +11,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+body{
+  background-color: blueviolet;
+  color: white;
+}
 
 .MainDiv {
   display: flex;
@@ -24,11 +28,42 @@ code {
   display: flex;
   flex-direction: column;
   width: 50%;
+  border: 1px solid blueviolet;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+.ButtonEl{
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+}
+
+.ButtonEl button {
+  cursor: pointer;
+  background-color: yellow;
+  color: #333;
+  border: 2px solid #333;
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.ButtonEl button:hover {
+background-color: black;
+color: yellow;
+}
+
+
+.ButtonEl li {
+  list-style: none;
 }
 
 .divInfo img {
   width: 220px;
   height: 250px;
   align-self: center;
+  margin-top: 30px;
 
 }
